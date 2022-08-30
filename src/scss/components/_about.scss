@@ -1,0 +1,131 @@
+.about {
+  background: #111518;
+  mix-blend-mode: normal;
+  padding-top: 50px;
+}
+
+.article {
+  text-align: center;
+  font-family: "Russo One", sans-serif;
+  font-size: 36px;
+  color: #ffffff;
+  cursor: default;
+  transition: 2s;
+}
+
+.about__ {
+  &info {
+    margin-top: 150px;
+    padding-bottom: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+
+  &image-wrapper {
+    position: relative;
+    padding-left: 100px;
+  }
+}
+
+.info__ {
+  &image-one {
+    width: 350px;
+    height: 400px;
+  }
+
+  &image-two {
+    width: 250px;
+    height: 300px;
+    position: absolute;
+    top: -35%;
+    left: 60%;
+  }
+
+  &text {
+    margin-left: 170px;
+    margin-right: 80px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #fff;
+    cursor: default;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .about__ {
+    &info {
+      margin-top: 100px;
+      padding-bottom: 140px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+    }
+
+    &image-wrapper {
+      position: relative;
+      padding-left: 50px;
+    }
+  }
+
+  .info__ {
+    &text {
+      margin-left: 100px;
+      margin-right: 10px;
+      font-size: 16px;
+      line-height: 26px;
+    }
+
+    &image-one {
+      width: 250px;
+      height: 300px;
+    }
+
+    &image-two {
+      width: 150px;
+      height: 200px;
+      position: absolute;
+      top: -35%;
+      left: 60%;
+    }
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 738px) {
+  .about__ {
+    &info {
+      margin-top: 100px;
+      padding-bottom: 100px;
+      display: flex;
+      flex-direction: column-reverse;
+      row-gap: 150px;
+      justify-content: space-between;
+      text-align: center;
+      align-items: center;
+      position: relative;
+    }
+
+    &image-wrapper {
+      position: relative;
+      padding-left: 0px;
+    }
+  }
+
+  .info__{
+    &text {
+      margin: 0 40px 0 40px;
+    }
+
+    &image-two {
+      width: 150px;
+      height: 200px;
+      position: absolute;
+      top: -45%;
+      left: 35%;
+    }
+  }
+}

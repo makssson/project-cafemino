@@ -1,0 +1,325 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero {
+  background-image: url("/dist/img/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+
+.hero__ {
+  &nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &nav-wrapper {
+    background: rgba(0, 0, 0, 0.44);
+  }
+
+  &wrapper {
+    padding-bottom: 300px;
+  }
+
+  &text {
+    text-align: center;
+    margin-top: 350px;
+  }
+
+  &buttons-wrapper {
+    margin-top: 155px;
+    padding-bottom: 300px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.text__ {
+  &main {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    color: #fff6ed;
+    letter-spacing: 0.075em;
+    cursor: default;
+  }
+
+  &secondary {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    color: #fff6ed;
+    margin-top: 20px;
+    letter-spacing: 0.075em;
+    cursor: default;
+  }
+}
+
+.nav__ {
+  &list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &logo {
+    width: 400px;
+    margin-top: 1%;
+  }
+
+  &logo-mini {
+    display: none;
+  }
+}
+
+.list__ {
+  &point {
+    margin-right: 20px;
+    font-family: "Russo One", sans-serif;
+    font-size: 24px;
+    color: #ffffff;
+    cursor: pointer;
+  }
+
+  &point:hover {
+    color: #4c403d;
+  }
+}
+
+.button__ {
+  &welcome {
+    padding: 20px 40px;
+    margin-right: 8%;
+    background: rgba(83, 79, 79, 0.5);
+    font-family: "Russo One", sans-serif;
+    font-size: 20px;
+    letter-spacing: 0.075em;
+    color: #ffffff;
+    transition: 0.7s;
+  }
+
+  &buy {
+    padding: 20px 40px;
+    background: rgba(76, 64, 61, 0.5);
+    font-family: "Russo One", sans-serif;
+    font-size: 20px;
+    letter-spacing: 0.075em;
+    color: #ffffff;
+    transition: 0.7s;
+  }
+
+  &welcome:hover,
+  &welcome:focus {
+    box-shadow: inset 0 0 0 2em rgba(83, 79, 79, 1);
+    transform: translateY(-0.25em);
+    transition: 0.7s;
+  }
+
+  &buy:hover,
+  &buy:focus {
+    box-shadow: inset 0 0 0 2em rgba(76, 64, 61, 1);
+    transform: translateY(-0.25em);
+    transition: 0.7s;
+  }
+}
+
+@media screen and (min-width: 739px) and (max-width: 1199px) {
+  .nav__ {
+    &logo {
+      width: 350px;
+      height: 75px;
+    }
+
+    &logo-mini {
+      display: none;
+    }
+  }
+
+  .list__ {
+    &point {
+      font-size: 20px;
+    }
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 738px) {
+  .button__ {
+    &welcome {
+      margin-right: 0;
+    }
+  }
+
+  .nav__ {
+    &logo-mini {
+      display: none;
+    }
+
+    &burger-wrapper {
+      order: 3;
+      // overflow: hidden;
+      padding: 10px 0px 10px 10px;
+      position: relative;
+    }
+
+    &burger-wrapper::before {
+      position: absolute;
+      content: "";
+      background: #ffffff;
+      border-radius: 5px;
+      width: 26px;
+      height: 3px;
+      top: 10%;
+      left: 26%;
+      transition: 1.5s;
+    }
+
+    &burger-wrapper::after {
+      position: absolute;
+      content: "";
+      background: #ffffff;
+      border-radius: 5px;
+      width: 26px;
+      height: 3px;
+      top: 63%;
+      left: 26%;
+      transition: 1.5s;
+    }
+
+    &list {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      text-align: left;
+      left: -200%;
+      transition: 1.5s;
+    }
+    &list.active {
+      left: 8.9%;
+      transition: 1.5s;
+    }
+  }
+
+  .burger__ {
+    &line {
+      margin-bottom: 5px;
+      margin-right: 15px;
+      background: #ffffff;
+      border-radius: 5px;
+      width: 26px;
+      height: 3px;
+      transition: 1.5s;
+    }
+  }
+
+  .hero__ {
+    &nav {
+      justify-content: space-between;
+      margin-right: 30px;
+      position: relative;
+    }
+
+    &buttons-wrapper {
+      margin: 155px 100px 0 100px;
+      padding-bottom: 300px;
+      display: flex;
+      row-gap: 50px;
+      justify-content: center;
+      flex-direction: column;
+    }
+  }
+  .nav__burger-wrapper.active::before {
+    top: 10px;
+    transform: rotate(45deg);
+    transition: 1.5s;
+  }
+
+  .nav__burger-wrapper.active::after {
+    top: 10px;
+    transform: rotate(-45deg);
+    transition: 1.5s;
+  }
+
+  .burger__line.active {
+    transform: rotate(360deg) scale(0);
+    transition: 1.5s;
+  }
+
+  .list__ {
+    &point {
+      padding: 29px 80px 21px 80px;
+      font-weight: normal;
+      font-size: 26px;
+      line-height: 26px;
+      color: #ffffff;
+      background-color: #333333;
+      border-bottom: 1px solid #3b3b3b;
+      border-top: 1px solid #3b3b3b;
+      position: relative;
+    }
+  }
+
+  .text__ {
+    &main {
+      font-size: 30px;
+    }
+
+    &secondary {
+      font-size: 30px;
+      margin-top: 20px;
+    }
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .nav__ {
+    &logo {
+      display: none;
+    }
+
+    &logo-mini {
+      display: block;
+      width: 50px;
+      height: 40px;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      margin-left: 25px;
+    }
+  }
+
+  .hero__ {
+    &buttons-wrapper {
+      margin: 100px 50px 0 50px;
+      padding-bottom: 300px;
+      display: flex;
+      justify-content: center;
+    }
+
+    &text {
+      text-align: center;
+      margin-top: 170px;
+    }
+  }
+
+  .button__ {
+    &welcome {
+      margin-right: 0;
+      font-size: 15px;
+      padding: 15px 35px;
+    }
+
+    &buy {
+      padding: 15px 35px;
+      background: rgba(76, 64, 61, 0.5);
+      font-family: "Russo One", sans-serif;
+      font-size: 15px;
+      letter-spacing: 0.075em;
+      color: #ffffff;
+      transition: 0.7s;
+    }
+  }
+}

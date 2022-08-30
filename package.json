@@ -1,0 +1,30 @@
+{
+  "name": "cafemino-project",
+  "version": "1.0.0",
+  "description": "cafemino-project",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/makssson"
+  },
+  "author": "Maksym Yaremchenko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/makssson"
+  },
+  "homepage": "https://gitlab.com/makssson",
+  "devDependencies": {
+    "browser-sync": "^2.27.5",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean": "^0.4.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^4.1.1",
+    "gulp-uglify": "^3.0.2",
+    "sass": "^1.42.1"
+  },
+  "dependencies": {}
+}

@@ -1,0 +1,375 @@
+.menu {
+  background: #020203;
+  mix-blend-mode: normal;
+  padding-top: 50px;
+}
+
+.menu__ {
+  &positions {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    color: #ffffff;
+    cursor: default;
+  }
+
+  &item {
+    display: none;
+  }
+
+  &active {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 160px;
+  }
+}
+
+.positions__ {
+  &tab {
+    padding: 15px 30px 15px 30px;
+    border: 1px solid rgba(255, 255, 255, 0);
+    cursor: pointer;
+  }
+
+  &active {
+    color: #020203;
+    background: #ffffff;
+  }
+
+  &tab:hover {
+    border: 1px solid #ffffff;
+  }
+}
+
+.item__ {
+  &photo-one,
+  &photo-two {
+    width: 420px;
+    height: 400px;
+  }
+
+  &photo-three,
+  &small-four {
+    width: 230px;
+    height: 200px;
+  }
+
+  &element {
+    position: relative;
+    overflow: hidden;
+  }
+
+  &element-small {
+    position: relative;
+    overflow: hidden;
+  }
+
+  &hover {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 51px;
+    background: rgba(67, 58, 58, 0.9);
+    padding: 50px 0 50px 0;
+    width: 420px;
+    position: absolute;
+    top: 0%;
+    left: -200%;
+    transition: 1s;
+  }
+
+  &hover-small {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 27.8px;
+    background: rgba(67, 58, 58, 0.9);
+    padding: 20px 0 20px 0;
+    width: 230px;
+    position: absolute;
+    top: 0%;
+    left: -200%;
+    transition: 1s;
+  }
+
+  &name {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 59px;
+    color: #ffffff;
+    cursor: default;
+  }
+
+  &name-small {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #ffffff;
+    cursor: default;
+  }
+
+  &price-value {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    color: #ffffff;
+    cursor: default;
+  }
+
+  &small-value {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #ffffff;
+    cursor: default;
+  }
+
+  &price {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 50px;
+    color: #ffffff;
+    cursor: default;
+  }
+
+  &price-small {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #ffffff;
+    cursor: default;
+  }
+
+  &image {
+    width: 100px;
+    height: 90px;
+  }
+
+  &image-small {
+    width: 55px;
+    height: 45px;
+  }
+}
+
+.item__element:hover .item__hover {
+  left: 0%;
+  transition: 1s;
+}
+
+.item__element-small:hover .item__hover-small {
+  left: 0%;
+  transition: 1s;
+}
+
+.item__photo-small {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 739px) and (max-width: 1199px) {
+  .menu__ {
+    &positions {
+      margin-top: 100px;
+      display: flex;
+      justify-content: space-evenly;
+      font-family: "Montserrat", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 30px;
+      color: #ffffff;
+      cursor: default;
+    }
+
+    &active {
+      flex-wrap: wrap;
+    }
+  }
+
+  .item__ {
+    &photo-one,
+    &photo-two {
+      width: 320px;
+      height: 300px;
+    }
+
+    &photo-small {
+      width: 1199px;
+      flex-direction: row;
+      justify-content: space-around;
+      margin-top: 79px;
+    }
+
+    &photo-three,
+    &small-four {
+      width: 320px;
+      height: 300px;
+    }
+
+    &hover-small {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      row-gap: 27.8px;
+      background: rgba(67, 58, 58, 0.9);
+      padding: 64.7px 0 64.7px 0;
+      width: 322px;
+      position: absolute;
+      top: 0%;
+      left: -200%;
+      transition: 1s;
+    }
+
+    &hover {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      row-gap: 27.8px;
+      background: rgba(67, 58, 58, 0.9);
+      padding: 64.7px 0 64.7px 0;
+      width: 322px;
+      position: absolute;
+      top: 0%;
+      left: -200%;
+      transition: 1s;
+    }
+
+    &name-small,
+    &small-value,
+    &price-small,
+    &name,
+    &price-value,
+    &price {
+      font-size: 28px;
+      line-height: 35px;
+    }
+
+    &image {
+      width: 55px;
+      height: 45px;
+    }
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 738px) {
+  .menu__ {
+    &positions {
+      margin-top: 100px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      font-family: "Montserrat", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      color: #ffffff;
+      cursor: default;
+    }
+
+    &active {
+      flex-direction: column;
+      align-items: center;
+      row-gap: 30px;
+      margin-top: 100px;
+    }
+
+    &photo-small {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  .positions__ {
+    &tab {
+      padding: 10px 15px 10px 15px;
+      border: 1px solid rgba(255, 255, 255, 0);
+      cursor: pointer;
+    }
+
+    &tab:nth-child(2) {
+      order: 3;
+    }
+  }
+
+  .item__ {
+    &photo-one,
+    &photo-two {
+      width: 310px;
+      height: 290px;
+    }
+
+    &photo-three,
+    &small-four {
+      width: 310px;
+      height: 290px;
+    }
+
+    &element-small:nth-child(2) {
+      margin-top: 30px;
+    }
+
+    &hover-small {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      row-gap: 27.8px;
+      background: rgba(67, 58, 58, 0.9);
+      padding: 64px 0 64px 0;
+      width: 310px;
+      position: absolute;
+      top: 0%;
+      left: -200%;
+      transition: 1s;
+    }
+
+    &hover {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      row-gap: 27.8px;
+      background: rgba(67, 58, 58, 0.9);
+      padding: 64.7px 0 64.7px 0;
+      width: 322px;
+      position: absolute;
+      top: 0%;
+      left: -200%;
+      transition: 1s;
+    }
+
+    &name-small,
+    &small-value,
+    &price-small,
+    &name,
+    &price-value,
+    &price {
+      font-size: 28px;
+      line-height: 35px;
+    }
+
+    &image {
+      width: 55px;
+      height: 45px;
+    }
+  }
+}

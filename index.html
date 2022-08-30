@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cafemino</title>
+    <link rel="stylesheet" href="./dist/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="hero__nav-wrapper">
+        <div class="hero__nav container">
+          <img src="./dist/img/logo 1.png" class="nav__logo" alt="hero-logo" />
+          <img
+            src="./dist/img/logo-mini 1.png"
+            alt="hero-logo-mini"
+            class="nav__logo-mini"
+          />
+
+          <div class="nav__burger-wrapper">
+            <div class="burger__line"></div>
+          </div>
+
+          <div class="nav__list">
+            <a href="#about__us" class="list__point">Про нас</a>
+            <a href="#menu" class="list__point">Меню</a>
+            <a href="#gallery" class="list__point">Галерея</a>
+            <a href="#contact" class="list__point">Контакт</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__text container">
+        <p class="text__main">Найкраща кава твого міста</p>
+        <p class="text__secondary">у хорошій компанії</p>
+      </div>
+
+      <div class="hero__buttons-wrapper container">
+        <a href="" class="button__welcome">Завітати до кафе</a>
+        <a href="" class="button__buy">Придбати товари</a>
+      </div>
+    </header>
+
+    <a href="#" id="toTop">
+      <svg
+        width="10pt"
+        height="10pt"
+        viewBox="0 0 630 630"
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g>
+          <g>
+            <path
+              d="M489.229,442.468L254.563,37.135c-3.797-6.592-14.677-6.592-18.453,0L1.443,442.468c-1.92,3.307-1.92,7.36-0.021,10.667
+        c1.92,3.307,5.44,5.333,9.259,5.333h469.333c3.819,0,7.339-2.027,9.259-5.333C491.128,449.849,491.128,445.775,489.229,442.468z"
+            />
+          </g>
+        </g>
+      </svg>
+    </a>
+
+    <section class="about">
+      <h1 class="article" id="about__us">Про нас</h1>
+      <div class="about__info">
+        <div class="about__image-wrapper">
+          <img src="./dist/img/img 1.png" alt="" class="info__image-one" />
+          <img src="./dist/img/img 2.png" alt="" class="info__image-two" />
+        </div>
+        <div class="about__text-wrapper">
+          <p class="info__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta,
+            iusto quo consequuntur praesentium reiciendis nam dolor commodi
+            voluptas placeat ea at distinctio quisquam excepturi facere nemo
+            officiis deserunt quae tenetur. Odit, tempore! Error, nulla
+            provident inventore quod vero voluptatem dolores quam id accusamus
+            obcaecati corrupti voluptates et cumque tenetur totam doloribus, sit
+            blanditiis ut repellendus commodi. Blanditiis quisquam illo
+            deserunt. Blanditiis, nam velit obcaecati quasi voluptatem, aliquam
+            quis, et consequuntur cum voluptas quam mollitia architecto suscipit
+            iure rerum deleniti vel sunt in distinctio. Accusantium earum
+            dolorem ea animi repellat beatae. Amet laboriosam commodi fugit
+            facilis delectus quam asperiores excepturi ut! Officia totam
+            repellat exercitationem, enim officiis vitae dolores et praesentium
+            ad eum fugit sit voluptatem nihil, rem ut, perferendis nisi? Dolores
+            molestiae animi maxime atque omnis sit, suscipit totam ab
+            exercitationem sed laudantium non earum porro pariatur? Sint quod
+            ducimus facilis nihil facere quos vel voluptatem fugit, maxime
+            minima. Quisquam.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu" id="menu">
+      <h1 class="article">Меню</h1>
+      <ul class="menu__positions">
+        <li class="positions__tab positions__active" data-title="coffee">
+          Кава
+        </li>
+        <li class="positions__tab" data-title="cold">Холодні напої</li>
+        <li class="positions__tab" data-title="goods">Товари</li>
+      </ul>
+      <div class="menu__item menu__active" data-content="coffee">
+        <div class="item__element">
+          <img
+            src="./dist/img/capuch.png"
+            alt="capuch"
+            class="item__photo-one"
+          />
+          <div class="item__hover">
+            <p class="item__name">Капучіно</p>
+            <img
+              src="./dist/img/logo-mini 1.png"
+              alt="coffee-image"
+              class="item__image"
+            />
+            <p class="item__price">
+              <span class="item__price-value">35</span> грн
+            </p>
+          </div>
+        </div>
+        <div class="item__element">
+          <img src="./dist/img/latte.png" alt="latte" class="item__photo-two" />
+          <div class="item__hover">
+            <p class="item__name">Латте</p>
+            <img
+              src="./dist/img/logo-mini 1.png"
+              alt="coffee-image"
+              class="item__image"
+            />
+            <p class="item__price">
+              <span class="item__price-value">35</span> грн
+            </p>
+          </div>
+        </div>
+
+        <div class="item__photo-small">
+          <div class="item__element-small">
+            <img
+              src="./dist/img/americano.png"
+              alt="americano"
+              class="item__photo-three"
+            />
+            <div class="item__hover-small">
+              <p class="item__name-small">Американо</p>
+              <img
+                src="./dist/img/logo-mini 1.png"
+                alt="coffee-image"
+                class="item__image-small"
+              />
+              <p class="item__price-small">
+                <span class="item__small-value">35</span> грн
+              </p>
+            </div>
+          </div>
+
+          <div class="item__element-small">
+            <img
+              src="./dist/img/espresso.png"
+              alt="espresso"
+              class="item__small-four"
+            />
+            <div class="item__hover-small">
+              <p class="item__name-small">Еспресо</p>
+              <img
+                src="./dist/img/logo-mini 1.png"
+                alt="coffee-image"
+                class="item__image-small"
+              />
+              <p class="item__price-small">
+                <span class="item__small-value">35</span> грн
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu__item" data-content="cold">
+        <div class="item__element">
+          <img src="./dist/img/cold.png" alt="cold" class="item__photo-one" />
+          <div class="item__hover">
+            <p class="item__name">Cold</p>
+            <img
+              src="./dist/img/logo-mini 1.png"
+              alt="coffee-image"
+              class="item__image"
+            />
+            <p class="item__price">
+              <span class="item__price-value">25</span> грн
+            </p>
+          </div>
+        </div>
+        <div class="item__element">
+          <img src="./dist/img/cold.png" alt="cold" class="item__photo-two" />
+          <div class="item__hover">
+            <p class="item__name">Cold</p>
+            <img
+              src="./dist/img/logo-mini 1.png"
+              alt="coffee-image"
+              class="item__image"
+            />
+            <p class="item__price">
+              <span class="item__price-value">15</span> грн
+            </p>
+          </div>
+        </div>
+
+        <div class="item__photo-small">
+          <div class="item__element-small">
+            <img
+              src="./dist/img/cold.png"
+              alt="cold"
+              class="item__photo-three"
+            />
+            <div class="item__hover-small">
+              <p class="item__name-small">Cold</p>
+              <img
+                src="./dist/img/logo-mini 1.png"
+                alt="coffee-image"
+                class="item__image-small"
+              />
+              <p class="item__price-small">
+                <span class="item__small-value">45</span> грн
+              </p>
+            </div>
+          </div>
+          <div class="item__element-small">
+            <img
+              src="./dist/img/cold.png"
+              alt="cold"
+              class="item__photo-three"
+            />
+            <div class="item__hover-small">
+              <p class="item__name-small">Cold</p>
+              <img
+                src="./dist/img/logo-mini 1.png"
+                alt="coffee-image"
+                class="item__image-small"
+              />
+              <p class="item__price-small">
+                <span class="item__small-value">55</span> грн
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu__item" data-content="goods">
+        <div class="item__element">
+          <img src="./dist/img/turka.png" alt="turka" class="item__photo-one" />
+          <div class="item__hover">
+            <p class="item__name">Turka</p>
+            <img
+              src="./dist/img/logo-mini 1.png"
+              alt="coffee-image"
+              class="item__image"
+            />
+            <p class="item__price">
+              <span class="item__price-value">250</span> грн
+            </p>
+          </div>
+        </div>
+        <div class="item__element">
+          <img src="./dist/img/turka.png" alt="turka" class="item__photo-two" />
+          <div class="item__hover">
+            <p class="item__name">Turka</p>
+            <img
+              src="./dist/img/logo-mini 1.png"
+              alt="coffee-image"
+              class="item__image"
+            />
+            <p class="item__price">
+              <span class="item__price-value">150</span> грн
+            </p>
+          </div>
+        </div>
+
+        <div class="item__photo-small">
+          <div class="item__element-small">
+            <img
+              src="./dist/img/turka.png"
+              alt="turka"
+              class="item__photo-three"
+            />
+            <div class="item__hover-small">
+              <p class="item__name-small">Turka</p>
+              <img
+                src="./dist/img/logo-mini 1.png"
+                alt="coffee-image"
+                class="item__image-small"
+              />
+              <p class="item__price-small">
+                <span class="item__small-value">450</span> грн
+              </p>
+            </div>
+          </div>
+          <div class="item__element-small">
+            <img
+              src="./dist/img/turka.png"
+              alt="turka"
+              class="item__photo-three"
+            />
+            <div class="item__hover-small">
+              <p class="item__name-small">Turka</p>
+              <img
+                src="./dist/img/logo-mini 1.png"
+                alt="coffee-image"
+                class="item__image-small"
+              />
+              <p class="item__price-small">
+                <span class="item__small-value">550</span> грн
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery" id="gallery">
+      <h1 class="article">Галерея</h1>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./dist/img/img 1.png" alt="" class="swiper__image" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./dist/img/img 1.png" alt="" class="swiper__image" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./dist/img/img 1.png" alt="" class="swiper__image" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./dist/img/img 1.png" alt="" class="swiper__image" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./dist/img/img 1.png" alt="" class="swiper__image" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./dist/img/img 1.png" alt="" class="swiper__image" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./dist/img/img 1.png" alt="" class="swiper__image" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./dist/img/img 1.png" alt="" class="swiper__image" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./dist/img/img 1.png" alt="" class="swiper__image" />
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <footer class="contact" id="contact">
+      <h1 class="article">Контакт</h1>
+      <div class="map__wrapper">
+        <div class="map__info">
+          <p class="map__number">+380974543525</p>
+          <p class="map__town">м. Кременчук,</p>
+          <p class="map__adress">вул. Пушкіна 15</p>
+          <img
+            src="./dist/img/inst-logo.png"
+            alt="inst"
+            class="map__instagram"
+          />
+        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1521.0990385377675!2d33.41144738513605!3d49.06402093704278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1scafemino!5e0!3m2!1sru!2sua!4v1660743357966!5m2!1sru!2sua"
+          width="100%"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+      <div class="contact__bottom">
+        <img src="./dist/img/logo 1.png" alt="logo" class="contact__logo" />
+        <p class="contact__text">Завжди чекаємо вас на каву</p>
+      </div>
+    </footer>
+
+    <script src="./dist/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+      if (window.screen.width < 1199 && window.screen.width > 738) {
+        const swiper = new Swiper(".mySwiper", {
+          slidesPerView: 3,
+          spaceBetween: 10,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+      } else if (window.screen.width < 738 && window.screen.width > 469) {
+        const swiper = new Swiper(".mySwiper", {
+          slidesPerView: 2,
+          spaceBetween: 10,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+      } else if (window.screen.width < 468) {
+        const swiper = new Swiper(".mySwiper", {
+          slidesPerView: 1,
+          spaceBetween: 10,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+      } else {
+        const swiper = new Swiper(".mySwiper", {
+          slidesPerView: 4,
+          spaceBetween: 10,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+      }
+    </script>
+  </body>
+</html>
